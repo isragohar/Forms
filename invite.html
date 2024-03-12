@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue;">
+  <a href="index.html">Home</a>
+  <a href="user.html">user</a>
+<a href="logindetail.html">Login</a>
+<a href="line.html">FORM1</a>
+<a href="line.html">form</a>
+    <form action="submit.php" method="get">
+        <fieldset>
+          <legend>Login</legend>
+          <label for="username">Username*</label><br> <!-- "for" targets "id" -->
+          <input type="text" id="username" name="username" required><br>
+          <label for="password">Password*</label><br>
+          <input type="password" id="password" name="password" required pattern=".{4,}">
+        </fieldset>
+       
+        <fieldset>
+          <legend>Gender*</legend>
+          <label><input type="radio" name="gender" value="m" required> Male</label>
+          <label><input type="radio" name="gender" value="f"> Female</label>
+        </fieldset>
+       
+        <fieldset>
+          <legend>Programming Skill</legend>
+          <label><input type="checkbox" name="programming" value="java"> Java</label>
+          <label><input type="checkbox" name="programming" value="cpp" checked> C++</label>
+          <label><input type="checkbox" name="programming" value="csharp"> C#</label>
+        </fieldset>
+       
+        <fieldset>
+          <legend>Fruit</legend>
+          Choose a fruit:
+          <select name="fruit">
+            <option value="apple">Apple</option>
+            <option value="banana" selected>Banana</option>
+            <option value="orange">Orange</option>
+          </select>
+        </fieldset>
+       
+        <textarea name="comment" placeholder="Enter your comment here" rows="5" cols="40" maxlength="180"></textarea><br>
+       
+        <input type="submit" value="SEND">
+        <input type="reset" value="RESET">
+      </form>
+</body>
+</html>
